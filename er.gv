@@ -1,0 +1,70 @@
+graph ER {
+	node [shape=box]
+	name
+	node [fillcolor=orange shape=circle style=filled]
+	count
+		count -- name [len=5.0]
+	node [fillcolor=orange shape=circle style=filled]
+	phonetics
+		phonetics -- name [len=8.0]
+	node [shape=box]
+	count
+	node [fillcolor=orange shape=circle style=filled]
+	name
+		name -- count [len=5.0]
+	node [fillcolor=orange shape=circle style=filled]
+	phonetics
+		phonetics -- count [len=7.0]
+	node [shape=box]
+	phonetics
+	node [fillcolor=orange shape=circle style=filled]
+	name
+		name -- phonetics [len=8.0]
+	node [fillcolor=orange shape=circle style=filled]
+	count
+		count -- phonetics [len=7.0]
+	node [shape=box]
+	metaphone
+	node [fillcolor=orange shape=circle style=filled]
+	name
+		name -- metaphone [len=7.0]
+	node [fillcolor=orange shape=circle style=filled]
+	count
+		count -- metaphone [len=8.0]
+	node [fillcolor=orange shape=circle style=filled]
+	phonetics
+		phonetics -- metaphone [len=8.0]
+	node [shape=box]
+	meta1
+	node [fillcolor=orange shape=circle style=filled]
+	name
+		name -- meta1 [len=5.0]
+	node [fillcolor=orange shape=circle style=filled]
+	count
+		count -- meta1 [len=5.0]
+	node [fillcolor=orange shape=circle style=filled]
+	phonetics
+		phonetics -- meta1 [len=7.0]
+	node [shape=box]
+	meta2
+	node [fillcolor=orange shape=circle style=filled]
+	name
+		name -- meta2 [len=5.0]
+	node [fillcolor=orange shape=circle style=filled]
+	count
+		count -- meta2 [len=5.0]
+	node [fillcolor=orange shape=circle style=filled]
+	phonetics
+		phonetics -- meta2 [len=7.0]
+	node [shape=box]
+	soundex
+	node [fillcolor=orange shape=circle style=filled]
+	name
+		name -- soundex [len=6.0]
+	node [fillcolor=orange shape=circle style=filled]
+	count
+		count -- soundex [len=4.0]
+	node [fillcolor=orange shape=circle style=filled]
+	phonetics
+		phonetics -- soundex [len=8.0]
+}
